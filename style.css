@@ -26,6 +26,14 @@ h6 {
     margin: 0;
 }
 
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span h6 span {
+    color: var(--blue);
+}
+
 button,
 input,
 a,
@@ -47,6 +55,8 @@ nav {
     right: 0px;
     top: 10px;
     background-color: var(--white);
+    box-shadow: 1px 0px 50px rgb(236, 236, 236);
+    z-index: 40;
 }
 
 nav .nav-items {
@@ -62,6 +72,31 @@ h1 {
     font-size: 2rem;
 }
 
+.hero-search-section {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-search {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    flex: 1;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.hero-search input {
+    padding: 0px 0px 0px 10px;
+}
+
+.hero-search button {
+    background-color: var(--blue);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
 
 .hire {
     padding: 10px;
@@ -73,4 +108,233 @@ h1 {
 .hero-section p {
     font-size: 1rem;
     padding: 1.4rem 0px 1.4rem 0px;
+}
+
+.hero-svg {
+    padding-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.curve-shape-under {
+    width: 100%;
+}
+
+.services {
+    padding: 7rem 0px;
+    padding: 10rem 10px 0px 10px;
+}
+
+.service-card {
+    box-shadow: 1px 0px 50px rgb(236, 236, 236);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.service-card h2,
+.service-card p {
+    text-align: center;
+}
+
+.Freelancers-Section {
+    margin-bottom: 3rem;
+    padding: 10rem 10px 0px 10px;
+}
+
+.Freelancers-Section-img {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.Freelancers-Section-img img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.freelancers,
+.freelance-work {
+    padding: 5px 20px;
+    border-radius: 8px;
+    position: absolute;
+    box-shadow: 1px 0px 50px rgb(236, 236, 236);
+}
+
+.freelancers {
+    top: 20px;
+    right: 100px;
+}
+
+.freelance-work {
+    top: 100px;
+    right: 20px;
+
+}
+
+.freelance-work p,
+.freelancers p {
+    font-size: 10px;
+    text-align: center;
+}
+
+.freelance-work p:first-child,
+.freelancers p:first-child {
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.Freelancers-Section h2 {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: end;
+}
+
+.Freelancers-Section p {
+    text-align: end;
+}
+
+.latest-freelance-work {
+    margin-bottom: 3rem;
+    padding: 10rem 10px 0px 10px;
+}
+
+.latest-freelance-work h3 {
+    font-size: 1.5rem;
+}
+
+.latest-freelance-work main {
+    margin: 2rem 0px;
+}
+
+.latest-card {
+    box-shadow: 1px 0px 20px rgb(211, 211, 211);
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    padding: 20px;
+
+}
+
+.latest-card h1,
+.latest-card p {
+    text-align: center;
+
+}
+
+.apply-tag {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0px 0px 0px;
+
+}
+
+.apply-tag a {
+    color: var(--blue);
+    font-weight: 500;
+}
+
+.arrows {
+    display: flex;
+    justify-content: end;
+}
+
+.arrow {
+    box-shadow: 1px 0px 20px rgb(211, 211, 211);
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+    border-radius: 100%;
+}
+
+.arrow-right {
+    margin: 0px 0px 0px 10px;
+    background-color: var(--blue);
+}
+
+
+.Category-section {
+    margin-bottom: 3rem;
+    padding: 10rem 10px 0px 10px;
+}
+
+.Category-section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.Category-section button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-weight: 500;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 8px;
+}
+
+.Category-items {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 2rem;
+    grid-template-columns: auto auto auto auto;
+    overflow: hidden;
+    overflow-x: scroll;
+
+}
+
+.Category-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border-radius: 10px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.Category-item p {
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.img-1 {
+    background: url("./asset/image/graphic.png") no-repeat center / cover;
+}
+
+.img-2 {
+    background: url("./asset/image/cartoon.png") no-repeat center / cover;
+}
+
+.img-3 {
+    background: url("./asset/image/Illustration.png") no-repeat center / cover;
+}
+
+.img-4 {
+    background: url("./asset/image/Flyers\ &\ Vouchers.png") no-repeat center / cover;
+}
+
+.img-5 {
+    background: url("./asset/image/Logo\ Design.png") no-repeat center / cover;
+}
+
+.img-6 {
+    background: url("./asset/image/Social\ graphics.png") no-repeat center / cover;
+}
+
+.img-7 {
+    background: url("./asset/image/Article\ writing.png") no-repeat center / cover;
+}
+
+.img-8 {
+    background: url("./asset/image/Video\ Editing.png") no-repeat center / cover;
 }
